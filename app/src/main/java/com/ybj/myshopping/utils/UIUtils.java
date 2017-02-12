@@ -52,6 +52,14 @@ public class UIUtils {
     }
 
     /**
+     * sp转px的方法。
+     */
+    public static int sp2px(float spValue) {
+        final float fontScale = getContext().getResources().getDisplayMetrics().scaledDensity;
+        return (int) (spValue * fontScale + 0.5f);
+    }
+
+    /**
      * dp--->px
      *
      * @param dp
